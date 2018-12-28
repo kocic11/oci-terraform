@@ -19,9 +19,9 @@ output "show-shapes" {
 #   value = "${module.instance1.public_ip}"
 # }
 
-# output "identity_compartments" {
-#   value = "${data.oci_identity_compartments.identity_compartments.compartments}"
-# }
+output "identity_compartments" {
+  value = "${data.oci_identity_compartments.identity_compartments.compartments}"
+}
 
 
 
