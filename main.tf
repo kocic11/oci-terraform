@@ -64,6 +64,12 @@ module "auth_token1" {
   source = "./modules/auth_token"
   user_id     = "${var.user_ocid}"
 }
+
+module "policy1" {
+  source = "./modules/policy"
+  compartment_id = "${var.compartment_ocid}"
+  compartment_name = "${var.compartment_name}"
+}
  
 
 
